@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>六一儿童家居节-名家居世博园</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="keywords" content="名家居世博园年货节,家具展,家居年货,广东家具展,东莞家具展,东莞厚街家具展">
+	<meta name="description" content="广东名家居世博园是广东现代国际展览中心倾力打造的集展览展示、采购直销、信息交流和家居物流于一体，世界级家居行业展示中心，是中国家具走向世界的平台、世界著名家居品牌进入中国的窗口。">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/jquery.min.2.1.4.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/vue.min.js"></script>
+	<script src="js/index.js"></script>
+
+	<script>
+	/*if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="m/index.html";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}*/
+	</script>
+
+</head>
+<body>
+<div style="height: 0;width: 0;overflow: hidden;"><img src="images/wei_logo.jpg"></div>
+<div class="wrap">
+	<div class="index1">
+		<div class="main c">
+			<a href="https://jinshuju.net/f/b3ktSQ" target="_blank">查看更多详情</a>
+		</div>
+	</div>
+	<div class="index1-m">
+		<a href="https://jinshuju.net/f/b3ktSQ" target="_blank"><img class="img-fluid" src="images/t1m.jpg"></a>
+	</div>
+	
+	<!-- 导航栏 -->
+	<div class="index-main-nav sticky-top">
+	  <nav class="navbar navbar-expand-md navbar-dark">
+	    <div class="container">
+	      <a class="navbar-brand d-md-none" href="###">六一儿童家居节</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      <div class="collapse navbar-collapse" id="navbarNav">
+	        <ul class="navbar-nav mx-auto">
+	          <li class="nav-item">
+	            <a class="nav-link" href="#index-vip">贵宾尊享 <span class="sr-only">(current)</span></a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#index-ffep">设计到家</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#index-floor">楼层分类</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#index-live">现场活动</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#index-baokuan">限量爆款</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#index-hot">精品热卖</a>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	</div>
+
+	<!-- 贵宾尊享 -->
+	<a id="index-vip"></a>
+	<div class="index2">
+		<div class="et et1"></div>
+		<div class="et et2"></div>
+		<div class="et et3"></div>
+		<div class="et et4"></div>
+		<div class="et et6"></div>
+		<div class="main c">
+			<div class="f-title">
+				<h2>{{ topTitle }}</h2>
+				<h4 class="text-uppercase">| {{ topTitleEn }} |</h4>
+			</div>
+			<div class="f-content">
+				<ul class="ul-1">
+					<li v-for="v in lists">
+						<div class="ico"></div>
+						<a target="_blank" href="https://jinshuju.net/f/b3ktSQ">【{{ v.title }}】</a>
+						<p>{{ v.p1 }}</p>
+						<p>{{ v.p2 }}</p>
+						<p>{{ v.p3 }}</p>
+						<a class="btn22" target="_blank" href="https://jinshuju.net/f/b3ktSQ">{{ moreBtn }}</a>
+					</li>
+					
+				</ul>
+			
+				<ul class="ul-2">
+					<li v-for="v in listsYS">
+						<h3>{{ v.ID }}</h3>
+						<div class="en">{{ v.titleEn }}</div>
+						<h4>{{ v.title }}</h4>
+						<p>{{ v.desc }}</p>
+						<div class="bg"></div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<!-- //贵宾尊享 -->
+
+	<!-- 设计到家 -->
+	<a id="index-ffep"></a>
+	<div class="index3">
+		<div class="et et5"></div>
+		<div class="et et5a"></div>
+		<div class="et et4a"></div>
+		<div class="main c">
+			<div class="f-title">
+				<h2>专业设计师一对一服务</h2>
+				<h4 class="text-uppercase">one to one service for professional designers</h4>
+			</div>
+			<div class="f-title2">
+				<h2>500多名设计师随叫随到</h2>
+				<p>500品牌家居顾问一对一免费为您服务</p>
+				<p>空间不足？户型不合理？这些都不是问题。只要您有想法，我们都能为您实现。</p>
+			</div>
+			<div class="f-content-3">
+				<img class="img-fluid" src="images/pic1.jpg">
+				<div class="yuyue">
+					<h4>现在预约即可享受</h4>
+					<p>&gt;128元精美礼品一份</p>
+					<p>&gt;五星级酒店午餐一份</p>
+					<a target="_blank" href="https://jinshuju.net/f/b3ktSQ" >预约家居顾问&gt;</a>
+				</div>
+				<!-- <a target="_blank" href="https://jinshuju.net/f/b3ktSQ" class="a1">上传我的户型图免费设计>></a>
+				<a target="_blank" href="https://jinshuju.net/f/b3ktSQ" class="a2">马上预约专业家居顾问＞＞</a> -->
+			</div>
+		</div>
+	</div>
+	<!-- 楼层品类分类 -->
+	<a id="index-floor"></a>
+	<div class="floor-catalog">
+		<div class="et et2a"></div>
+		<div class="et et3a"></div>
+		<div class="et et7"></div>
+		<div class="main c">
+			<div class="f-title">
+				<h2>名家居世博园-楼层品类分类</h2>
+				<h4 class="text-uppercase">famous furnishings expo park-classification of floors</h4>
+			</div>
+			<div class="floor-img"><img src="images/floor.jpg"></div>
+			<div class="floor-img-m"><img style="max-width: 100%;" src="images/floor_m.jpg"></div>
+			
+		</div>
+	</div>
+	<!-- //楼层品类分类 -->
+
+	<!-- 精彩活动现场 -->
+	<a id="index-live"></a>
+	<div class="index-vv">
+		<div class="et et2b"></div>
+		<div class="main c">
+			<div class="f-title">
+				<h2>精彩活动现场</h2>
+				<h4 class="text-uppercase">live shows</h4>
+			</div>
+			<div class="f-content-vv">
+				<div class="no-gutters row">
+					<div class="col-12 col-lg-5"><a href="https://jinshuju.net/f/b3ktSQ"><img src="images/live/live1.jpg" alt="儿童文化周" class="img-fluid"></a></div>
+					<div class="col-4 col-lg-3"><a href="https://jinshuju.net/f/b3ktSQ"><img src="images/live/live2.jpg" alt="儿童文化周" class="img-fluid"></a></div>
+					<div class="col-4 col-lg-3"><a href="https://jinshuju.net/f/b3ktSQ"><img src="images/live/live3.jpg" alt="儿童文化周" class="img-fluid"></a></div>
+					<div class="col-4 col-lg-3"><a href="https://jinshuju.net/f/b3ktSQ"><img src="images/live/live4.jpg" alt="儿童文化周" class="img-fluid"></a></div>
+					<div class="w-100"></div>
+					<div class="col-12 col-lg-5"><a href="https://jinshuju.net/f/b3ktSQ"><img src="images/live/live5.jpg" alt="儿童文化周" class="img-fluid"></a></div>
+					<div class="col-4 col-lg-3"><a href="https://jinshuju.net/f/b3ktSQ"><img src="images/live/live6.jpg" alt="儿童文化周" class="img-fluid"></a></div>
+					<div class="col-4 col-lg-3"><a href="https://jinshuju.net/f/b3ktSQ"><img src="images/live/live7.jpg" alt="儿童文化周" class="img-fluid"></a></div>
+					<div class="col-4 col-lg-3"><a href="https://jinshuju.net/f/b3ktSQ"><img src="images/live/live8.jpg" alt="儿童文化周" class="img-fluid"></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //精彩活动现场 -->
+	
+	<a id="index-baokuan"></a>
+	<div class="index4">
+		<div class="f-title">
+			<h2>限量爆款</h2>
+			<h4 class="text-uppercase">|  Limited bursting |</h4>
+		</div>
+
+		<div style="background:url(images/bg4.jpg) no-repeat 50% 0;">
+		<div class="f-content-4">
+			<div class="main c">
+				<div class="swiper-container swiper-container-hotsale"></div>
+				<script id="tpl_b" type="text/html">
+					<div class="swiper-wrapper">
+					<%for(var i=0;i<recommends.length;i++) { %> 
+						
+						<div class="swiper-slide">
+							<div class="img">
+							<a target="_blank" href="<%=url%>"><img class="img-fluid" src="images/<%=recommends[i].img%>"></a>
+							</div>
+							<div class="txt">
+								<h3><%=recommends[i].title%></h3>
+								<p>风格：<%=recommends[i].fg%></p>
+								<p>名称：<%=recommends[i].title2%></p>
+								<p>材质：<%=recommends[i].material%></p>
+								<p>限量：<%=recommends[i].num%>张</p>
+								<div class="price"><%=recommends[i].price%></div>
+								<a target="_blank" href="<%=url%>" class="btn2"><%=btn%></a>
+							</div>
+							
+						</div>
+					<% } %>
+					</div>
+				</script>
+					
+				<div class="preview">
+					<a class="arrow-left" href="#"></a>
+					<a class="arrow-right" href="#"></a>
+					<div class="swiper-container"></div>
+					<script id="tpl_c" type="text/html">
+						<div class="swiper-wrapper">
+						<%for(var i=0;i<recommends.length;i++) { %>
+							
+							<div class="swiper-slide active-nav">
+								<a href="###">
+									<img width="253" src="images/<%=recommends[i].img%>" alt="<%=recommends[i].title%>">
+									<div class="txt">
+										<p><%=recommends[i].title%></p>
+										<p><%=recommends[i].fg%></p>
+									</div>
+								</a>
+							</div>
+								
+						<% } %>
+						</div>
+					</script>
+					
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</div>
+		
+	<a id="index-hot"></a>
+	<div class="index5 main c">
+		<div class="f-title">
+			<h2>{{ topTitle }}</h2>
+			<h4 class="text-uppercase">{{ topTitleEn }}</h4>
+		</div>
+		<div class="f-content-5 goodlist">
+			<div class="good-item" v-for="v in lists">
+				<div class="good-img">
+					<a :href="url" target="_blank">
+					<img :src="'images/pp/' + v.img"  :alt="v.title">
+					
+					</a>
+				</div>
+				<div class="txt">
+					<p><a href="https://jinshuju.net/f/b3ktSQ" target="_blank">{{ v.title }}</a></p>
+					<p><span class="rmb">{{ v.price }}</span></p>
+					<p class="pp">{{ v.pp }}</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="footer mt-5 animated">
+	  <div class="container foot-container">
+	    <div class="row">
+	      <div class="col-lg-6"><a href="http://ffepcn.com" target="_blank"><img src="images/foot-img1.jpg" class="img-fluid"></a></div>
+	      <div class="col-lg-6">
+	        <div class="foot-contact">
+	          <div class="f-c-txt">
+	            <p class="title">广东省东莞市厚街广东现代国际展览中心</p>
+	            <p>电话：86-769-82681888</p>
+	            <p>传真：86-769-82681999</p>
+	            <p>邮编：523949</p>
+	            <p>网址：www.ffepcn.com</p>
+	            <p>国内免费咨询热线：400-833-2133</p>
+	          </div>
+	          <div class="ewm"><img src="images/ewma.jpg" alt="扫一扫关注名家居世博园"><p>扫描二维码<br>关注官方微信</p></div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+</div>
+<!-- 底部活动  -->
+<div class="fd_box">
+    <div class="fd_box_con">
+        <a href="javascript:;" class="cx_fd_box"></a>
+        <div class="f_i_dh clearfix">
+            <a class="bm_btn" href="https://jinshuju.net/f/b3ktSQ" target="_blank">立即预约抢购</a>
+
+        </div>
+        <div class="wei_2wei">
+            <img src="images/ewm.jpg" width="87" height="87">
+            <p>关注名家居世博园</p>
+        </div>
+    </div>
+    <div class="zx_f_bg"></div>
+</div>
+<!-- 底部活动end -->
+<script src="js/data.js"></script>
+<script>
+	var tpl3 = $("#tpl_c").html();
+	var html3 = template(tpl3,datab);
+	$(".preview .swiper-container").html(html3);
+	var tpl2 = $("#tpl_b").html();
+	var html2 = template(tpl2,datab);
+	$(".swiper-container-hotsale").html(html2);
+</script>
+<script>
+	var hotSwiper = new Swiper('.swiper-container-hotsale',{
+		autoplay: 2000,
+		paginationClickable: true,
+		autoplayDisableOnInteraction : false,
+		onSlideChangeStart: function() {
+		    updateNavPosition();
+		}
+	});
+
+	$('.preview .arrow-left').on('click', function(e) {
+		e.preventDefault()
+		if (hotSwiper.activeIndex == 0) {
+			hotSwiper.slideTo(hotSwiper.slides.length - 1, 1000);
+			return
+		}
+		hotSwiper.slidePrev()
+	})
+	$('.preview .arrow-right').on('click', function(e) {
+		e.preventDefault()
+		if (hotSwiper.activeIndex == hotSwiper.slides.length - 1) {
+			hotSwiper.slideTo(0, 1000);
+			return
+		}
+		hotSwiper.slideNext()
+	})
+
+	var previewSwiper = new Swiper('.preview .swiper-container', {
+		//visibilityFullFit: true,
+		slidesPerView: 'auto',
+		allowTouchMove: false,
+		// spaceBetween: 5,
+		onTap: function() {
+			    hotSwiper.slideTo(previewSwiper.clickedIndex)
+		}
+	})
+
+	function updateNavPosition() {
+			$('.preview .active-nav').removeClass('active-nav')
+			var activeNav = $('.preview .swiper-slide').eq(hotSwiper.activeIndex).addClass('active-nav')
+			if (!activeNav.hasClass('swiper-slide-visible')) {
+				if (activeNav.index() > previewSwiper.activeIndex) {
+					var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) - 1
+					previewSwiper.slideTo(activeNav.index() - thumbsPerNav)
+				} else {
+					previewSwiper.slideTo(activeNav.index())
+				}
+			}
+		}
+
+$(function () {
+    action();
+});
+function action() {
+    $(document.body).append("<div id=\"roll\" style=\"display:none;\"><div title=\"回到顶部\" id=\"roll_top\"></div></div>");
+    $('#roll_top').click(function () {
+        $('html,body').animate({ scrollTop: '0px' }, 600)
+    });
+    $(window).scroll(function (event) {
+        // if ($.browser.ie6) {
+        //     $('#roll').css('top', $(this).scrollTop() + $(this).height() - 170)
+        // }
+        if ($(this).scrollTop() > 260) {
+            $('#roll').fadeIn()
+        } else {
+            $('#roll').fadeOut()
+        }
+    })
+}
+
+</script>
+<script>
+$('#navbarNav').onePageNav({
+    scrollThreshold: 0.5, // Adjust if Navigation highlights too early or too late
+    scrollOffset: 80, //Height of Navigation Bar
+    filter: ':not(.external)',
+    // changeHash: true
+});
+
+$('.navbar-collapse a').click(function() {
+    $(".navbar-collapse").collapse('hide');
+});
+</script>
+<!-- 商务通 -->
+<script language="javascript" src="http://pbt.zoosnet.net/JS/LsJS.aspx?siteid=PBT61714746&float=1&lng=cn"></script>
+
+</body>
+</html>
